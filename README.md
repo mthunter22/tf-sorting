@@ -19,7 +19,7 @@ You must dispatch the packages in the following stacks:
 
 Implement the function **`sort(width, height, length, mass)`** (units are centimeters for the dimensions and kilogram for the mass). This function must return a string: the name of the stack where the package should go.
 
-Core Function
+### Core Function
 
 - src/sort.ts - Main sorting function that implements the classification logic
 - src/index.ts - Test runner with demonstration cases
@@ -31,3 +31,11 @@ Core Function
 - REJECTED: Both bulky AND heavy
 - SPECIAL: Either bulky OR heavy (but not both)
 - STANDARD: Neither bulky nor heavy
+
+### Run
+
+```
+  "build": "tsc",
+  "start": "npm run build && node dist/index.js",
+  "dev": "tsc && node dist/index.js"
+```
